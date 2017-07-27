@@ -7,13 +7,10 @@
       "taskName": "browserify:buid",
       "command": "browserify",
       "args": [
-        "lib/index.js",
-        "--standalone",
-        "mammoth",
-        "-p",
-        "browserify-prepend-licenses",
-        "-o",
-        "mammoth.browser.js"
+         "lib/index.js",
+         "--standalone", "mammoth",
+         "-p", "browserify-prepend-licenses",
+         "-o", "mammoth.browser.js"
       ],
       "type": "shell",
       "group": {
@@ -24,9 +21,7 @@
     {
       "taskName": "npm:install",
       "command": "npm",
-      "args": [
-        "install"
-      ],
+      "args": [ "install" ],
       "type": "shell",
       "group": "build"
     },
